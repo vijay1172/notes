@@ -1,0 +1,10 @@
+.navbar {
+    background-color: #739fd8;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100vw;
+    box-shadow: 0 2px 4px rgba(203, 166, 166, 0.1);
+    margin: 0;
+    box-sizing: border-box;
+  }
