@@ -1,12 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import SubjectCard from './components/SubjectCard';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import SubjectCard from "./components/SubjectCard";
+import NoticeContainer from "./components/Notice";
+import "./App.css";
 
 const subjects = [
-  { subject: 'Antenna', driveLink: 'https://drive.google.com/drive/folders/1Rr9SpEb-b4RaDIdADPLPQOBeb8QtfGtu' },
-  { subject: 'Wireless', driveLink: 'https://drive.google.com/drive/folders/1s7-CgcPFlbOAw9TPFP5vK074TvZObVIJ' },
-  { subject: 'VLSI Design', driveLink: 'https://drive.google.com/drive/folders/1RlXB7tUmsBrjyDlbiyBN5pFGoNv0t80m' }
+  {
+    subject: "Antenna",
+    driveLink:
+      "https://drive.google.com/drive/folders/1Rr9SpEb-b4RaDIdADPLPQOBeb8QtfGtu",
+  },
+  {
+    subject: "Wireless",
+    driveLink:
+      "https://drive.google.com/drive/folders/1s7-CgcPFlbOAw9TPFP5vK074TvZObVIJ",
+  },
+  {
+    subject: "VLSI Design",
+    driveLink:
+      "https://drive.google.com/drive/folders/1RlXB7tUmsBrjyDlbiyBN5pFGoNv0t80m",
+  },
 ];
 
 const motivationalQuotes = [
@@ -22,13 +35,28 @@ const motivationalQuotes = [
   "Do what you can, with what you have, where you are. - Theodore Roosevelt",
 ];
 
+const notices = [
+  {
+    title: "Mid-Term Exams Schedule",
+    description:
+      "The mid-term exams will start from March 5th. Check the timetable for more details.",
+    date: "2025-03-03",
+  },
+  {
+    title: "New Notes Uploaded",
+    description:
+      "Notes for VLSI Design have been uploaded.Check now!",
+    date: "2025-03-03",
+  },
+];
+
 function App() {
   const [loading, setLoading] = useState(true);
-  const [quote, setQuote] = useState('');
-
+  const [quote, setQuote] = useState("");
   useEffect(() => {
     setTimeout(() => setLoading(false), 2000);
-    const randomQuote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
+    const randomQuote =
+      motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
     setQuote(randomQuote);
   }, []);
 
@@ -41,15 +69,23 @@ function App() {
         <div>
           <div className="subject-grid">
             {subjects.map((sub, index) => (
-              <SubjectCard key={index} subject={sub.subject} driveLink={sub.driveLink} />
+              <SubjectCard
+                key={index}
+                subject={sub.subject}
+                driveLink={sub.driveLink}
+              />
             ))}
+          </div>
+          <div className="notice-section">
+            <h2>Notices</h2>
+            <NoticeContainer notices={notices} />
           </div>
           <div className="quote-container">
             <p className="quote">{quote}</p>
-            </div>
-            <div>
-              <p>Best of Luck !</p>
-            </div>
+          </div>
+          <div>
+            <p>Best of Luck !</p>
+          </div>
         </div>
       )}
     </div>

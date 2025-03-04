@@ -25,7 +25,20 @@
 .quote-button:hover {
   background-color: #45a049;
 }
+/* src/App.css */
+.notice-section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  width:fit-content;
+}
 
+.notice-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;

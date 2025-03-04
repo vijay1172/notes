@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 100%;
     margin: 0;
@@ -21,11 +21,13 @@
     margin: 0;
     font-size: 1.5rem;
     color: #333;
+    background-color: #9d91c9;
   }
   
   .subject-card p {
-    margin: 0.5rem 0 0;
+    margin: 0rem 0 0;
     color: #666;
+    background-color: #9d91c9;
   }
   @keyframes fadeInUp {
     from {

@@ -1,0 +1,48 @@
+/* src/components/Notice.css */
+
+.notice-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  justify-content: space-between; /* Distribute space between notices */
+}
+
+/* Notice styles remain the same */
+.notice {
+  background-color: #b1afe6;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem; /* Adjust margin to create spacing between notices */
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex: 1 1 calc(33.333% - 2rem); /* Adjust width for larger screens */
+}
+
+/* Notice hover effect */
+.notice:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notice h3 {
+  margin: 0 0 0.5rem;
+  color: #333;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.notice p {
+  margin: 0 0 0.5rem;
+  color: #666;
+  line-height: 1.2;
+}
+
+.notice small {
+  color: #000000;
+}
+
+/* Media queries for responsive behavior */
+@media (max-width: 768px) {
+  .notice {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
+}
