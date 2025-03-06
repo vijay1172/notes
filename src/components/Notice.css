@@ -8,7 +8,7 @@
 
 /* Notice styles remain the same */
 .notice {
-  background-color: #b1afe6;
+  background-color: #050423;
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
@@ -25,19 +25,19 @@
 
 .notice h3 {
   margin: 0 0 0.5rem;
-  color: #333;
+  color: #ede6e6;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
 .notice p {
   margin: 0 0 0.5rem;
-  color: #666;
+  color: #fff8f8;
   line-height: 1.2;
 }
 
 .notice small {
-  color: #000000;
+  color: #f8f8f8;
 }
 
 /* Media queries for responsive behavior */

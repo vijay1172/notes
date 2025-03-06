@@ -81,10 +81,10 @@ function App() {
             <NoticeContainer notices={notices} />
           </div>
           <div className="quote-container">
-            <p className="quote">{quote}</p>
+            <p className="quotepara">{quote}</p>
           </div>
           <div>
-            <p>Best of Luck !</p>
+            <p className="ending">Best of Luck !</p>
           </div>
         </div>
       )}

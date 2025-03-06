@@ -2,28 +2,13 @@
   text-align: center;
   padding: 0; /* Remove padding */
   min-height: 100vh;
-  background: linear-gradient(-45deg, #f9f9f9, #e0f7fa, #f9f9f9, #e0f7fa);
+  background: linear-gradient(-45deg, #0d0623, #22393c, #1e1853, #120c32);
   background-size: 400% 400%;
   animation: gradientBG 10s ease infinite;
+  /* background-image: url(/bgimage.jpg); */
   width: 100%;
+  background-size: cover;
   overflow: hidden;
-}
-.quote-button {
-  display: block;
-
-  margin: 3rem auto 0;
-  padding: 1.5rem 1rem;
-  color: black;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-family: fantasy;
-  transition: background-color 0.3s ease;
-}
-
-.quote-button:hover {
-  background-color: #45a049;
 }
 /* src/App.css */
 .notice-section {
@@ -35,7 +20,7 @@
 
 .notice-section h2 {
   text-align: center;
-  color: #333;
+  color: #fbf9f9;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
@@ -56,4 +41,10 @@
   .subject-grid {
     grid-template-columns: 1fr; /* Cards will stack vertically on small screens */
   }
+}
+.quotepara{
+  color:white;
+}
+.ending{
+  color:white;
 }
